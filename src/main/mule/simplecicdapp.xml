@@ -6,7 +6,7 @@
 http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
 http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
 	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="6a66fdfe-eb0a-4ee1-8b38-989f24bd5ebc" >
-		<http:listener-connection host="0.0.0.0" port="8083" />
+		<http:listener-connection host="0.0.0.0" port="8081" />
 	</http:listener-config>
 	<flow name="simplecicdappFlow" doc:id="95931263-0352-4ba4-ace9-ebf273c7094e" >
 		<http:listener doc:name="Listener" doc:id="03e6a8bd-f365-4612-b752-319ee2eddf21" config-ref="HTTP_Listener_config" path="/app"/>
